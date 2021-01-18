@@ -1,6 +1,4 @@
 def line(deli)
-    katz_deli = []
-    other_deli = ["Logan", "Avi", "Spencer"]
     if deli.empty?
         puts "The line is currently empty."
     else
@@ -13,15 +11,8 @@ def line(deli)
 end
 
 def take_a_number(deli, name)
-    if deli.empty?
         deli << name
-        puts "Welcome, #{name}. You are number 1 in line."
-    elsif
-        deli.push(name)
-        puts "Welcome, #{name}. You are number 4 in line."
-    else
-        deli.push("Ada", "Grace", "Kent")
-    end
+        puts "Welcome, #{name}. You are number #{deli.size} in line."
 end
 
 def now_serving(deli)
